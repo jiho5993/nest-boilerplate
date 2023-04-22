@@ -1,0 +1,20 @@
+{
+    "type": "",
+    "host": "",
+    "port": ,
+    "username": "",
+    "password": "",
+    "database": "",
+    "synchronize": false,
+    "logging": false,
+    "entities": [
+        "libs/entity/src/**/*.ts"
+    ],
+    "migrations": [
+        "migration/**/*.ts"
+    ],
+    "cli": {
+        "entitiesDir": "src",
+        "migrationDir": "migration"
+    }
+}

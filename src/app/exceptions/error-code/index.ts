@@ -1,0 +1,12 @@
+import { IErrorCode } from './error.interface';
+import errorMessagesKo from './message';
+
+export const ERROR_CODE = Object.keys(errorMessagesKo).reduce(
+  (acc, cur) => ({
+    ...acc,
+    [cur]: errorMessagesKo[cur],
+  }),
+  {},
+) as IErrorCode;
+
+export default ERROR_CODE;
