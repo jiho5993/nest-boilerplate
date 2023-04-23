@@ -10,6 +10,11 @@ $ yarn add
 $ cp .env.example .env
 ```
 
+* ormconfig.json
+```bash
+$ cp ormconfig.example.json ormconfig.json
+```
+
 ## Running the app
 
 ```bash
