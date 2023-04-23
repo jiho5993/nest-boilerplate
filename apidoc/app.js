@@ -4,7 +4,7 @@
  * @apiName HealthCheck
  * @apiGroup App
  *
- * @apiSuccessExample Response (example):
+ * @apiSuccessExample {json} Response (example):
  * HTTP/1.1 200 OK
  *
  */

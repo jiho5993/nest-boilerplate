@@ -32,6 +32,7 @@ export class ConfigService {
       MYSQL_PASSWORD: Joi.string(),
       JWT_SECRET_KEY: Joi.string().required(),
       SENTRY_DSN: Joi.string().required(),
+      SLACK_API_SERVER: Joi.string().required(),
     });
 
     const { error, value: validatedEnvConfig } = envVarsSchema.validate(envConfig);
@@ -82,6 +83,9 @@ export class ConfigService {
   }
   get sentryDsn(): string {
     return this.envConfig.SENTRY_DSN;
+  }
+  get slackApiServer(): string {
+    return this.envConfig.SLACK_API_SERVER;
   }
 }
 

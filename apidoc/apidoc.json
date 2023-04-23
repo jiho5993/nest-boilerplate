@@ -2,7 +2,6 @@
   "name": "{API_NAME} API",
   "version": "0.0.1",
   "description": "api server docs",
-
   "title": "{API_NAME} API",
   "url": "http://0.0.0.0/{PREFIX}"
 }

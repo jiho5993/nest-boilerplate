@@ -50,4 +50,4 @@ lerna-debug.log*
 ormconfig.json
 
 # apidoc output
-apidocDist/**/*
+apidocDist

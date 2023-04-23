@@ -75,6 +75,6 @@ export class LoggingInterceptor implements NestInterceptor {
     if (result) {
       return result;
     }
-    throw new ClientRequestException(ERROR_CODE.ERR_0000001, HttpStatus.INTERNAL_SERVER_ERROR);
+    throw new ClientRequestException(ERROR_CODE.ERR_000_0001, HttpStatus.INTERNAL_SERVER_ERROR);
   }
 }

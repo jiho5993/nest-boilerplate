@@ -1,7 +1,6 @@
 import { Request } from 'express';
 import { JwtPayload } from 'jsonwebtoken';
 import { RequestExtras } from './interceptors/request-extras';
-import { UserEntity } from '../user/entity/user.entity';
 
 export interface IRequestAugmented extends Request {
   extras: RequestExtras;
@@ -16,7 +15,7 @@ export interface IRequestLocation {
 
 export interface IRequestExtraData {
   payload?: JwtUserPayload;
-  user?: UserEntity;
+  // user?: UserEntity;
 }
 
 export interface JwtUserPayload extends JwtPayload {
