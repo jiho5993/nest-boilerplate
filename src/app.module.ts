@@ -16,7 +16,7 @@ export const TypeOrmRootModule = TypeOrmModule.forRootAsync({
 });
 
 @Module({
-  imports: [RavenModule, TypeOrmModule, LoggerModule, HealthModule, SentryModule],
+  imports: [RavenModule, TypeOrmRootModule, LoggerModule, HealthModule, SentryModule],
   providers: [
     { provide: APP_INTERCEPTOR, useValue: new RavenInterceptor() },
     { provide: APP_INTERCEPTOR, useClass: LoggingInterceptor },
